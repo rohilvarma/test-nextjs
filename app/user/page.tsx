@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 async function testGet() {
-  const res = await fetch("http:localhost:3000/api", {
+  const res = await fetch(`${process.env.URL}/api`, {
     method: "GET",
     cache: "no-store",
   });
